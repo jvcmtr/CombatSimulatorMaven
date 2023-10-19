@@ -1,0 +1,27 @@
+<project>
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>CombatSimulatorMaven</groupId>
+   <version>1.0</version>
+   <artifactId>project</artifactId>
+   <packaging>pom</packaging>
+   <name>project</name>
+
+   <modules>
+      <module>CombatProject</module>
+      <module>Utils</module>
+      <module>RelatorioProject</module>
+      <module>DAL</module>
+   </modules>
+
+   <build>
+      <pluginManagement>
+         <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-site-plugin</artifactId>
+            </plugin>
+         </plugins>
+      </pluginManagement>
+   </build>
+
+</project>
