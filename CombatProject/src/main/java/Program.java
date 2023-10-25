@@ -37,6 +37,15 @@ public class Program {
         }
     }
 
+
+
+
+
+
+
+
+
+    
     public static String runRandomBattle(Character c) {
         BaseClass[] criaturas = CombatHelper.getIniciativa(c.getHeroi(), CombatHelper.getRandomMonster());
         int rounds = 0;
