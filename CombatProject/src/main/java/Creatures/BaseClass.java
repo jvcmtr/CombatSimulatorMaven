@@ -1,19 +1,19 @@
 package Creatures;
 
 import combatRules.Dice;
+import lombok.Data;
+import lombok.Getter;
 
+@Data
 public abstract class BaseClass {
 
-    protected String name;
+    @Getter protected String name;
     protected Dice FdD;
     protected int PdV;
     protected int For;
     protected int Def;
     protected int Agi;
 
-    public BaseClass() {
-
-    }
 
     public boolean isDead(){
         return (PdV <= 0);
@@ -48,8 +48,5 @@ public abstract class BaseClass {
         return spacing + name + "  | Vida: " +  PdV + "  | Força: " + For + "  | Defesa: " + Def+ "  | Agilidade: "+Agi+ "  | Dano: "+FdD.toString();
     }
 
-    public String getName(){
-        return this.name;
-    }
 
 }

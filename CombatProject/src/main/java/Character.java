@@ -1,30 +1,12 @@
 
 import Creatures.BaseClass;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NonNull;
+import lombok.Setter;
 
+@AllArgsConstructor @Getter @Setter
 public class Character {
-    private BaseClass Heroi;
-    private String Nickname;
-
-    public BaseClass getHeroi() {
-        return Heroi;
-    }
-
-    public void setHeroi(BaseClass heroi) {
-        Heroi = heroi;
-    }
-
-    public String getNickname() {
-        return Nickname;
-    }
-
-    public void setNickname(String nickname) {
-        Nickname = nickname;
-    }
-
-    public Character(String nick, BaseClass heroi){
-        this.Heroi = heroi;
-        this.Nickname = nick;
-    }
-
-
+    @NonNull String nickname;
+    @NonNull BaseClass heroi;
 }

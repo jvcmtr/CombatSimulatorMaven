@@ -1,10 +1,20 @@
 <project>
    <modelVersion>4.0.0</modelVersion>
+
    <groupId>CombatSimulatorMaven</groupId>
    <version>1.0</version>
    <artifactId>project</artifactId>
    <packaging>pom</packaging>
    <name>project</name>
+
+   <dependencies>
+      <dependency>
+         <groupId>org.projectlombok</groupId>
+         <artifactId>lombok</artifactId>
+         <version>1.18.30</version>
+         <scope>provided</scope>
+      </dependency>
+   </dependencies>
 
    <modules>
       <module>CombatProject</module>

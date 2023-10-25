@@ -13,6 +13,13 @@
         <maven.compiler.target>20</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <parent>
+        <artifactId>project</artifactId>
+        <version>1.0</version>
+        <groupId>CombatSimulatorMaven</groupId>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>CombatSimulatorMaven</groupId>
